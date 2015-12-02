@@ -1,19 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" ng-app="checkAdventure">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Adventure Checklist</title>
-  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js" type="text/javascript"></script>
-  <script src="lib/angular-ui-router.js"></script>
-  <script src="app.js" type="text/javascript"></script>
-  <script src="controllers/MainController.js"></script>
-  <script src="services/MainFactory.js"></script>
-  <link href='styles/main.css' rel='stylesheet' type="text/css">
+<meta charset="UTF-8">
+<title>Adventure Checklist</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="controllers/MainController.js"></script>
+    <script src="services/MainFactory.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-    <body>
-        <div class="container">
-            <div ui-view></div>
-        </div>
-    </body>
+
+  <body>
+   <div ng-controller="AccordionDemoCtrl">
+   <script type="text/ng-template" id="group-template.html">
+     <div class="panel {{panelClass || 'panel-default'}}">
+       <div class="panel-heading">
+         <h4 class="panel-title" style="color:#fa39c3">
+           <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading"><span
+             ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
+         </h4>
+       </div>
+       <div class="panel-collapse collapse" uib-collapse="!isOpen">
+         <div class="panel-body" style="text-align: right" ng-transclude></div>
+       </div>
+     </div>
+   </script>
+
+   <div id="header"><h1>Adventures Checklists!</h1></div>
+   <div class="container">
+       <div ui-view></div>
+   </div>
+   <uib-accordion close-others="oneAtATime">
+     <uib-accordion-group heading="Checklist Menu">
+        <a href="#backpacking">Backpacking</a><br>
+        <a href="#dayhiking">Dayhiking</a><br>
+        <a href="#mountaineering">Mountaineering</a><br>
+        <a href="#rockclimbing">Rockclimbing</a><br>
+     </uib-accordion-group>
+
+ </div>
+  </body>
 </html>

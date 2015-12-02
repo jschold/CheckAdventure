@@ -1,4 +1,8 @@
-var checkAdventure = angular.module('checkAdventure', ['ui.router']);
+var checkAdventure = angular.module('checkAdventure', [
+    'ui.router',
+    'ui.bootstrap',
+    'ngAnimate'
+]);
 
 checkAdventure.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
@@ -10,6 +14,24 @@ checkAdventure.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('backpacking', {
     url: "/#backpacking",
     templateUrl: "partials/backpacking.html",
+    controller: 'MainCtrl'
+  });
+
+  $stateProvider.state('dayhiking', {
+    url: "/#dayhiking",
+    templateUrl: "partials/dayhiking.html",
+    controller: 'MainCtrl'
+  });
+
+  $stateProvider.state('rockclimbing', {
+    url: "/#rockclimbing",
+    templateUrl: "partials/rockclimbing.html",
+    controller: 'MainCtrl'
+  });
+
+  $stateProvider.state('mountaineering', {
+    url: "/#mountaineering",
+    templateUrl: "partials/mountaineering.html",
     controller: 'MainCtrl'
   });
 
