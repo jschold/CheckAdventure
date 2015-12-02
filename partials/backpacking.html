@@ -15,15 +15,96 @@
          </div>
        </script>
 
-     <div id="header"><h1>Checklist</h1>
+       <div id="header"><h1>Backpacking Checklist</h1>
       <uib-accordion close-others="oneAtATime">
          <uib-accordion-group heading="Navigation">
-           <div ng-repeat="todo in todos">
+           <div ng-repeat="backpacking in backpackings">
              <label><input type = "checkbox" ng-model="deleted"></label>
-             <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{todo.name}}</label>
+             <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{backpacking.name}}</label>
              <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
            </div>
+       </uib-accordion-group>
+
+       <uib-accordion close-others="oneAtATime">
+          <uib-accordion-group heading="Sun protection">
+            <div ng-repeat="sunscreen in sunscreens">
+              <label><input type = "checkbox" ng-model="deleted"></label>
+              <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{sunscreen.name}}</label>
+              <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+            </div>
+        </uib-accordion-group>
+
+        <uib-accordion close-others="oneAtATime">
+           <uib-accordion-group heading="Insulation">
+             <div ng-repeat="insulation in insulations">
+               <label><input type = "checkbox" ng-model="deleted"></label>
+               <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{insulation.name}}</label>
+               <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+             </div>
          </uib-accordion-group>
+
+         <uib-accordion close-others="oneAtATime">
+            <uib-accordion-group heading="Illumination">
+              <div ng-repeat="illumination in illuminations">
+                <label><input type = "checkbox" ng-model="deleted"></label>
+                <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{illumination.name}}</label>
+                <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+              </div>
+          </uib-accordion-group>
+
+          <uib-accordion close-others="oneAtATime">
+             <uib-accordion-group heading="First-Aid Supplies">
+               <div ng-repeat="firstaid in firstaids">
+                 <label><input type = "checkbox" ng-model="deleted"></label>
+                 <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{firstaid.name}}</label>
+                 <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+               </div>
+           </uib-accordion-group>
+
+           <uib-accordion close-others="oneAtATime">
+              <uib-accordion-group heading="Fire">
+                <div ng-repeat="fire in fires">
+                  <label><input type = "checkbox" ng-model="deleted"></label>
+                  <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{fire.name}}</label>
+                  <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+                </div>
+            </uib-accordion-group>
+
+            <uib-accordion close-others="oneAtATime">
+               <uib-accordion-group heading="Repair Kit and Tools">
+                 <div ng-repeat="sunscreen in sunscreens">
+                   <label><input type = "checkbox" ng-model="deleted"></label>
+                   <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{sunscreen.name}}</label>
+                   <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+                 </div>
+             </uib-accordion-group>
+
+             <uib-accordion close-others="oneAtATime">
+                <uib-accordion-group heading="Nutrition">
+                  <div ng-repeat="nutrition in nutritions">
+                    <label><input type = "checkbox" ng-model="deleted"></label>
+                    <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{nutrition.name}}</label>
+                    <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+                  </div>
+              </uib-accordion-group>
+
+              <uib-accordion close-others="oneAtATime">
+                 <uib-accordion-group heading="Hydration">
+                   <div ng-repeat="hydration in hydrations">
+                     <label><input type = "checkbox" ng-model="deleted"></label>
+                     <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{hydration.name}}</label>
+                     <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+                   </div>
+               </uib-accordion-group>
+
+               <uib-accordion close-others="oneAtATime">
+                  <uib-accordion-group heading="Emergency Shelter">
+                    <div ng-repeat="shelter in shelters">
+                      <label><input type = "checkbox" ng-model="deleted"></label>
+                      <label ng-class="{strike: deleted, bold: important, 'has-error': error}" class="editing-label">{{shelter.name}}</label>
+                      <input ng-hide="!editing" ng-model="todo.name" class="editing-label" type="text"/>
+                    </div>
+                </uib-accordion-group>
     </div>
   </div>
 </body>
