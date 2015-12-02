@@ -14,7 +14,7 @@ checkAdventure.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('backpacking', {
     url: "/backpacking",
     templateUrl: "partials/backpacking.html",
-    controller: 'MainCtrl'
+    controller: 'BackpackingCtrl'
   });
 
   $stateProvider.state('dayhiking', {

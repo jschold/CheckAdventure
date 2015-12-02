@@ -1,10 +1,10 @@
-checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope, $stateParams) {
+checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope) {
   $scope.backpackings = [
-    {"name": "Map", "sunname": "Sunscreen"},
-    {"name": "Compass", "sunname": "Lip balm"},
-    {"name": "Insulation", "sunname": "Sunglasses"},
-    {"name": "GPS (optional)"},
-    {"name": "Altimeter (optional)"}
+    {name: "Map"},
+    {name: "Compass"},
+    {name: "Insulation"},
+    {name: "GPS (optional)"},
+    {name: "Altimeter (optional)"}
   ]
 
   $scope.sunscreens = [
@@ -49,4 +49,17 @@ checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope, $s
   $scope.shelters = [
     {"name": "Tent, tarp, bivy or reflective blanket"}
   ]
+
+
+    $scope.groups = [
+      {
+        title: 'Dynamic Group Header - 1',
+        content: 'Dynamic Group Body - 1'
+      },
+      {
+        title: 'Dynamic Group Header - 2',
+        content: 'Dynamic Group Body - 2'
+      }
+    ];
+
 });
