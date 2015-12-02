@@ -1,6 +1,4 @@
-<div id="header"><h1>Checklists For Your Adventures Ahead</h1></div>
-
-<br>
+<body ng-app="checkOutdoors" class="ng-scope">
 <div ng-controller="mainCtrl" class="list ng-scope">
 <h1>Backpacking Checklist</h1>
 <div class="item" ng-class="{'editing-item':editing, 'edited':todo.edited}" ng-repeat="getItem in getItems">
@@ -14,3 +12,5 @@
         </div>
     </div>
 </div>
+</body>
+<div ui-view> </div>

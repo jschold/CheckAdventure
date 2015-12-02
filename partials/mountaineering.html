@@ -1,0 +1,14 @@
+<div ng-controller="mainCtrl" class="list ng-scope">
+<h1>Mountaineering Checklist</h1>
+<div class="item" ng-class="{'editing-item':editing, 'edited':todo.edited}" ng-repeat="getItem in getItems">
+        <input ng-model="getItem.completed" type = "checkbox"/>
+        <label ng-click= "" ng-hide="editing">{{getItem.name}}</label>
+        <input ng-change="todo.edited = true" ng-blur="editing = false;" ng-show="editing" ng-model="getItem.name" class="editing-label" type="text"/>
+        <div class="actions">
+            <a href="" ng-click= "editing = !editing">Edit</a>
+            <a href="" ng-click= "helloConsole()">Save</a>
+            <a href="" class="Delete">Delete</a>
+        </div>
+    </div>
+</div>
+<div ui-view> </div>
