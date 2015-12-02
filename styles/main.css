@@ -1,15 +1,29 @@
+header {
+  /*background-image:url(https://static.pexels.com/photos/2312/sea-black-and-white-nature-forest.jpg);*/
+  float:left;
+  padding:15px 0;
+  width:100%;
+}
+
 body {
-  color: #2d3339;
-  font-family: "Varela Round";
-  text-align: center;
-  background: #edeff0;
-  font-size: 16px; }
+    background-image:url(https://static.pexels.com/photos/2312/sea-black-and-white-nature-forest.jpg);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*color: black;*/
+    font-family: "Varela Round";
+    text-align: center;
+    font-size: 16px; }
+
+  }
 
 a {
   color: #3f8abf;
   text-decoration: none; }
   a:hover {
-    color: #65a1cc; }
+    color: #65a1cc;
+    }
 
 h1 {
     text-align:center;
@@ -18,7 +32,7 @@ h1 {
 p {
     margin-left: 50px;
     margin-right:50px;
-    padding-top: 17px;
+    padding-top: 50px;
     padding-bottom: 17px;
     font-size: 20px;
 }
@@ -27,8 +41,8 @@ p {
   background: #fff;
   width: 80%;
   min-width: 500px;
-  margin: 80px auto 0;
-  border-top: 40px solid #5a6772;
+  margin: 40px auto 0;
+  border-top: 2px solid #edeff0;
   text-align: left; }
   .list .item {
     border-bottom: 2px solid #edeff0;
@@ -65,6 +79,11 @@ p {
     text-decoration: line-through; }
   .list .add {
     padding: 25px 0 27px 25px; }
+
+.strike {
+  text-decoration: line-through;
+}
+
 
 /*input[type="checkbox"] {
     display:none;

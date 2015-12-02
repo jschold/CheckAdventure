@@ -1,15 +1,20 @@
-checkAdventure.controller('MainCtrl', function MainCtrl($scope, MainFactory) {
-    $scope.helloConsole = dataService.helloConsole;
-    $scope.list = MainFactory.list;
-    $scope.MainFactory = MainFactory;
-    $scope.findItems= dataService.findItems();
+// checkAdventure.controller('MainCtrl', function MainCtrl($scope, MainFactory) {
+//     $scope.helloConsole = dataService.helloConsole;
+//     $scope.list = MainFactory.list;
+//     $scope.MainFactory = MainFactory;
+//     // $scope.findItems= dataService.findItems();
+//     //
+//     // dataService.findItems(function(response) {
+//     //     $scope.todos = response.data;
+//     // });
+// })
 
-    dataService.findItems(function(response) {
-        $scope.todos = response.data;
-    });
+
+checkAdventure.controller('MainCtrl', function MainCtrl($scope) {
+    $scope.message = 'Hello!';
 })
 
-checkAdventure.controller('AccordionDemoCtrl', function ($scope) {
+checkAdventure.controller('AccordionCtrl', function ($scope) {
   $scope.groups = [
     {
       title: 'Dynamic Group Header - 1',
