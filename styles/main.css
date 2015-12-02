@@ -1,15 +1,24 @@
+#header {
+  background-image:url(https://static.pexels.com/photos/2312/sea-black-and-white-nature-forest.jpg);
+  float:left;
+  padding:15px 0;
+  width:100%;
+}
+
 body {
   color: #2d3339;
   font-family: "Varela Round";
   text-align: center;
-  background: #edeff0;
-  font-size: 16px; }
+  background: #ffffff;
+  font-size: 16px;
+  }
 
 a {
   color: #3f8abf;
   text-decoration: none; }
   a:hover {
-    color: #65a1cc; }
+    color: #65a1cc;
+    }
 
 h1 {
     text-align:center;
@@ -18,7 +27,7 @@ h1 {
 p {
     margin-left: 50px;
     margin-right:50px;
-    padding-top: 17px;
+    padding-top: 50px;
     padding-bottom: 17px;
     font-size: 20px;
 }
