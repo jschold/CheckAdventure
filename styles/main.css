@@ -2,6 +2,8 @@
   background-image:url("adventure_checklist.jpg");
   float:left;
   padding:75px 0;
+  max-height: 100%;
+  max-width: 100%;
   width:100%;
   background-repeat: no-repeat;
   background-position: center;
