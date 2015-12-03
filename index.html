@@ -12,9 +12,9 @@
         <script src="app.js"></script>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <script src="controllers/AccordionController.js"></script>
+        <script src="controllers/ModalController.js"></script>
         <script src="controllers/BackpackingController.js"></script>
         <script src="controllers/DayhikingController.js"></script>
-        <script src="controllers/MountaineeringController.js"></script>
         <script src="controllers/RockclimbingController.js"></script>
         <script src="services/MainFactory.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -22,7 +22,13 @@
   </head>
 
   <body>
-   <div ng-controller="AccordionCtrl">
+      <a href=" " id="header"></a>
+
+      <!-- <div class="container">
+          <div ui-view="header"></div>
+      </div> -->
+
+   <!-- <div ng-controller="AccordionCtrl">
      <script type="text/ng-template" id="group-template.html">
        <div class="panel {{panelClass || 'panel-default'}}">
          <div class="panel-heading">
@@ -37,15 +43,14 @@
        </div>
      </script>
 
-     <div id="header"><h1>Adventures Checklists!</h1></div>
+     <!-- <div id="header"><h1>Adventures Checklists!</h1></div> -->
      <uib-accordion close-others="oneAtATime">
        <uib-accordion-group heading="Checklist Menu">
           <!-- <a href="#home">Home</a><br> -->
           <a ui-sref="backpacking">Backpacking</a><br>
           <a ui-sref="dayhiking">Dayhiking</a><br>
-          <a ui-sref="mountaineering">Mountaineering</a><br>
           <a ui-sref="rockclimbing">Rockclimbing</a><br>
-       </uib-accordion-group>
+       </uib-accordion-group> -->
 
        <div class="container">
            <div ui-view></div>

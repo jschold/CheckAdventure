@@ -5,11 +5,11 @@ var checkAdventure = angular.module('checkAdventure', [
 ]);
 
 checkAdventure.config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider.state('home', {
-    url: "",
-    templateUrl: "partials/home.html",
-    controller: 'MainCtrl'
-  });
+    $stateProvider.state('home', {
+      url: "",
+      templateUrl: "partials/home.html",
+      controller: 'ModalCtrl'
+    });
 
   $stateProvider.state('backpacking', {
     url: "/backpacking",
