@@ -7,6 +7,11 @@
   background-position: center;
   background-color: black;
 }
+div.custom .panel-default>.panel-heading {
+    background-color: black;
+    border-bottom: black;
+    color: #ffffff;
+}
 
 body {
     background-image:url(https://static.pexels.com/photos/2312/sea-black-and-white-nature-forest.jpg);
