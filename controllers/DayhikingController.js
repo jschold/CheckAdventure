@@ -1,4 +1,4 @@
-checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope) {
+checkAdventure.controller('DayhikingCtrl', function DayhikingCtrl($scope) {
   $scope.backpackings = [
     {name: "Map"},
     {name: "Compass"},
@@ -51,14 +51,14 @@ checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope) {
   ]
 
 
-    $scope.groups = [
-      {
-        title: 'Dynamic Group Header - 1',
-        content: 'Dynamic Group Body - 1'
-      },
-      {
-        title: 'Dynamic Group Header - 2',
-        content: 'Dynamic Group Body - 2'
-      }
-    ];
+  $scope.groups = [
+    {
+      title: 'Dynamic Group Header - 1',
+      content: 'Dynamic Group Body - 1'
+    },
+    {
+      title: 'Dynamic Group Header - 2',
+      content: 'Dynamic Group Body - 2'
+    }
+  ];
 });

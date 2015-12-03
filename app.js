@@ -20,19 +20,19 @@ checkAdventure.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider.state('dayhiking', {
     url: "/dayhiking",
     templateUrl: "partials/dayhiking.html",
-    controller: 'MainCtrl'
+    controller: 'DayhikingCtrl'
   });
 
   $stateProvider.state('rockclimbing', {
     url: "/rockclimbing",
     templateUrl: "partials/rockclimbing.html",
-    controller: 'MainCtrl'
+    controller: 'RockclimbingCtrl'
   });
 
   $stateProvider.state('mountaineering', {
     url: "/mountaineering",
     templateUrl: "partials/mountaineering.html",
-    controller: 'MainCtrl'
+    controller: 'MountaineeringCtrl'
   });
 
   });

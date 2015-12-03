@@ -1,5 +1,5 @@
-header {
-  /*background-image:url(https://static.pexels.com/photos/2312/sea-black-and-white-nature-forest.jpg);*/
+#header {
+  /*background-image:url("adventure_checklist.jpg");*/
   float:left;
   padding:15px 0;
   width:100%;
@@ -12,7 +12,7 @@ body {
     top: 0;
     left: 0;
     /*color: black;*/
-    font-family: "Varela Round";
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 16px; }
 
@@ -27,6 +27,9 @@ a {
 
 h1 {
     text-align:center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    padding-bottom: 17px;
 }
 
 p {
@@ -34,7 +37,7 @@ p {
     margin-right:50px;
     padding-top: 50px;
     padding-bottom: 17px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .list {
@@ -50,53 +53,10 @@ p {
     .list .item label {
       padding-left: 5px;
       cursor: pointer; }
-    .list .item .editing-label {
-      margin-left: 5px;
-      font-family: "Varela Round";
-      border-radius: 2px;
-      border: 2px solid #a7b9c4;
-      font-size: 16px;
-      padding: 15px 0 15px 10px;
-      width: 60%; }
     .list .item .actions {
       float: right;
       margin-right: 20px; }
-      .list .item .actions .delete {
-        color: #ed5a5a;
-        margin-left: 10px; }
-        .list .item .actions .delete:hover {
-          color: #f28888; }
-    .list .item.editing .actions {
-      margin-top: 17px; }
-  .list .edited label:after {
-    content: " edited";
-    text-transform: uppercase;
-    color: #a7b9c4;
-    font-size: 14px;
-    padding-left: 5px; }
-  .list .completed label {
-    color: #a7b9c4;
-    text-decoration: line-through; }
-  .list .add {
-    padding: 25px 0 27px 25px; }
 
 .strike {
   text-decoration: line-through;
 }
-
-
-/*input[type="checkbox"] {
-    display:none;
-}*/
-/*input[type="checkbox"] + span {
-    display:inline-block;
-    width:19px;
-    height:19px;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    background:url(checkbox-empty.svg) left top no-repeat;
-    cursor:pointer;
-}
-input[type="checkbox"]:checked + span {
-    background:url(checkbox-filled.svg) left top no-repeat;
-}*/
