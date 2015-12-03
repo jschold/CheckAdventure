@@ -19,38 +19,22 @@
         <script src="services/MainFactory.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/main.css">
+        <!-- <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script> -->
   </head>
 
   <body>
-      <a href=" " id="header"></a>
-
-      <!-- <div class="container">
-          <div ui-view="header"></div>
-      </div> -->
-
-   <!-- <div ng-controller="AccordionCtrl">
-     <script type="text/ng-template" id="group-template.html">
-       <div class="panel {{panelClass || 'panel-default'}}">
-         <div class="panel-heading">
-           <h4 class="panel-title" style="color:#fa39c3">
-             <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading"><span
-               ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
-           </h4>
-         </div>
-         <div class="panel-collapse collapse" uib-collapse="!isOpen">
-           <div class="panel-body" style="text-align: right" ng-transclude></div>
-         </div>
-       </div>
-     </script>
-
-     <!-- <div id="header"><h1>Adventures Checklists!</h1></div> -->
-     <uib-accordion close-others="oneAtATime">
-       <uib-accordion-group heading="Checklist Menu">
-          <!-- <a href="#home">Home</a><br> -->
-          <a ui-sref="backpacking">Backpacking</a><br>
-          <a ui-sref="dayhiking">Dayhiking</a><br>
-          <a ui-sref="rockclimbing">Rockclimbing</a><br>
-       </uib-accordion-group> -->
+      <!-- <script>
+      var myFirebaseRef = new Firebase("https://<checkadventure>.firebaseio.com/");
+    </script> -->
+     <a href=" " id="header"></a>
+     <div class="custom">
+         <uib-accordion close-others="oneAtATime">
+           <uib-accordion-group heading="Checklist Menu">
+              <a ui-sref="backpacking">Backpacking</a><br>
+              <a ui-sref="dayhiking">Dayhiking</a><br>
+              <a ui-sref="rockclimbing">Rockclimbing</a><br>
+           </uib-accordion-group> -->
+     </div>
 
        <div class="container">
            <div ui-view></div>
