@@ -1,8 +1,11 @@
 #header {
-  /*background-image:url("adventure_checklist.jpg");*/
+  background-image:url("adventure_checklist.jpg");
   float:left;
-  padding:15px 0;
+  padding:75px 0;
   width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
 }
 
 body {
@@ -14,8 +17,9 @@ body {
     /*color: black;*/
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-size: 16px; }
-
+    font-size: 16px;
+    color: black;
+    }
   }
 
 a {
@@ -35,9 +39,10 @@ h1 {
 p {
     margin-left: 50px;
     margin-right:50px;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 17px;
     font-size: 24px;
+    color: black;
 }
 
 .list {
