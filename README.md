@@ -1,7 +1,7 @@
 Check Adventure
 ==========
 
-By Jenna Navratil, September 24, 2015
+By Jenna Navratil, November 30, 2015
 
 A checklist app meant to improve the shopping experience for loading up on backpacking/hiking/climbing gear.
 
