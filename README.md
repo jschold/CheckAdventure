@@ -9,7 +9,7 @@ Setup
 ----------
 * Clone repository:
 ```console
-$ git clone https://github.com/jschold/expertOutdoors.git
+$ git clone https://github.com/jschold/CheckAdventure.git
 ```
 * Go to the project directory in terminal and run:
 ```console
