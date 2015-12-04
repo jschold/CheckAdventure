@@ -1,4 +1,7 @@
 checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope) {
+ $scope.myData = new Firebase("https://checkadventure.firebaseio.com/");
+
+
   $scope.backpackings = [
     {name: "Map"},
     {name: "Compass"},
