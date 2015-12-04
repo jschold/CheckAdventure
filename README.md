@@ -21,7 +21,8 @@ Or...
 
 * Visit:
 ```
-https://jschold.github.io/CheckAdventure/t
+https://jschold.github.io/CheckAdventure
+```
 
 Technologies Used
 ----------
