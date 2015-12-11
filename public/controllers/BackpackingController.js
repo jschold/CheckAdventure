@@ -1,7 +1,4 @@
 checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope) {
- // $scope.myData = new Firebase("https://checkadventure.firebaseio.com/");
-
-
   $scope.backpackings = [
     {name: "Map"},
     {name: "Compass"},
@@ -53,15 +50,10 @@ checkAdventure.controller('BackpackingCtrl', function BackpackingCtrl($scope) {
     {"name": "Tent, tarp, bivy or reflective blanket"}
   ]
 
+  $scope.check = function(newCheck) {
+  console.log(check);
+  }
 
-    $scope.groups = [
-      {
-        title: 'Dynamic Group Header - 1',
-        content: 'Dynamic Group Body - 1'
-      },
-      {
-        title: 'Dynamic Group Header - 2',
-        content: 'Dynamic Group Body - 2'
-      }
-    ];
+  $scope.newCheck = {};
+
 });

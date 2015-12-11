@@ -1,4 +1,4 @@
-checkAdventure.controller('ModalCtrl', function ($scope, $uibModal, $log) {
+checkAdventure.controller('ModalCtrl', function($scope, $uibModal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
