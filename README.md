@@ -11,7 +11,7 @@ Setup
 ```console
 $ git clone https://github.com/jschold/CheckAdventure.git
 ```
-* Go to the project directory in terminal and run:
+* Navigate to the public folder in the project directory in terminal and run:
 ```console
 $ python -m SimpleHTTPServer
 ```
